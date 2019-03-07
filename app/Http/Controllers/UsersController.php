@@ -13,7 +13,8 @@ class UsersController extends Controller
     }
 
     public function show(User $user)
-    {
+    {   
+        dd(11);
         return view('users.show',compact('user'));
     }
 }
