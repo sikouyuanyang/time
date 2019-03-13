@@ -49032,14 +49032,13 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  * all outgoing HTTP requests automatically have it attached. This is just
  * a simple convenience so we don't have to attach every token manually.
  */
+// let token = document.head.querySelector('meta[name="csrf-token"]');
+// if (token) {
+//     window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+// } else {
+//     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+// }
 
-var token = document.head.querySelector('meta[name="csrf-token"]');
-
-if (token) {
-  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
-} else {
-  console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
-}
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
@@ -49136,15 +49135,39 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/test/testB.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/test/testB.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):\nError: ENOENT: no such file or directory, open '/home/vagrant/Code/Time/resources/sass/test/testB.scss'\n    at runLoaders (/home/vagrant/Code/Time/node_modules/webpack/lib/NormalModule.js:301:20)\n    at /home/vagrant/Code/Time/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /home/vagrant/Code/Time/node_modules/loader-runner/lib/LoaderRunner.js:203:19\n    at process.nextTick (/home/vagrant/Code/Time/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:73:15)\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)\n    at process._tickCallback (internal/process/next_tick.js:180:9)");
+
+/***/ }),
+
+/***/ "./resources/sass/testA.scss":
+/*!***********************************!*\
+  !*** ./resources/sass/testA.scss ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):\nError: ENOENT: no such file or directory, open '/home/vagrant/Code/Time/resources/sass/testA.scss'\n    at runLoaders (/home/vagrant/Code/Time/node_modules/webpack/lib/NormalModule.js:301:20)\n    at /home/vagrant/Code/Time/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /home/vagrant/Code/Time/node_modules/loader-runner/lib/LoaderRunner.js:203:19\n    at process.nextTick (/home/vagrant/Code/Time/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:73:15)\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)\n    at process._tickCallback (internal/process/next_tick.js:180:9)");
+
+/***/ }),
+
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!**************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/testA.scss ./resources/sass/test/testB.scss ***!
+  \**************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/vagrant/Code/time/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/vagrant/Code/time/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/vagrant/Code/Time/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /home/vagrant/Code/Time/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/vagrant/Code/Time/resources/sass/testA.scss */"./resources/sass/testA.scss");
+module.exports = __webpack_require__(/*! /home/vagrant/Code/Time/resources/sass/test/testB.scss */"./resources/sass/test/testB.scss");
 
 
 /***/ })
